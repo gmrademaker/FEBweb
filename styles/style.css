@@ -1,10 +1,123 @@
 body { 
-    background-color: black;
+    background-color: #0f224a;
     color: white;
+    margin:0;
+    padding:0;
+}
+
+@font-face {
+    font-family: 'Pokemon1';
+    src: url('../fonts/pokemonGoFont2.woff2');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Pokemon1';
+    src: url('../fonts/pokemonGoFont1.woff2');
+    font-weight: bold;
+}
+
+:root { 
+    --primary-color: white;
+    --primary-font: "Pokemon1", "Sans-Serif";
 }
 
 h1 { 
     text-transform: uppercase;
-    font-family: "Arial", "Sans-Serif";
+    font-family: var(--primary-font);
     font-size: 2.5em;
+    color: var(--primary-color);
+}
+
+h2 {
+    text-transform: uppercase;
+    font-family: var(--primary-font);
+}
+
+h3 {
+    font-family: var(--primary-font);
+}
+
+p {
+    font-family: var(--primary-font);
+    position: centre;
+}
+
+article {
+    border-width: 2px;
+    border-style: solid;
+    border-color:gray;
+}
+
+main div:nth-of-type(1) {
+    display: flex;
+    justify-content: center;
+}
+
+iframe {
+    border-width: 10px;
+    border-style: solid;
+    margin: 20px;
+}
+
+main section:nth-of-type(1) {
+    background-image: url("../images/bgworldpink.webp");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    text-align: center;
+    width: 100%
+}
+
+main section:nth-of-type(1) img, main section:nth-of-type(2) img {
+    width: 95%;
+    padding: 1em;
+}
+
+main section:nth-of-type(1) p, main section:nth-of-type(2) p {
+    padding:1em;
+}
+
+main section:nth-of-type(1) a, main section:nth-of-type(2) a {
+    background-color: white;
+    border-radius: 50px;
+    padding: 8px 20px 8px 20px;
+    text-decoration: none;
+    color: #0f224a;
+    font-family: var(--primary-font);
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+main section:nth-of-type(2) {
+    background-image: url("../images/bgorange.webp");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    text-align: center;
+    width: 100%
+}
+
+main section:nth-of-type(2) img {
+    width: 45%;
+    padding: 1em;
+}
+
+section:nth-last-of-type(3) {
+    display: grid;
+    grid-column-start: 3;
+}
+
+nav img {
+    width: auto;
+    height: 48px;
+}
+
+img {
+    display: block;
+    height: auto;
+    max-width: 100%;
+    object-fit: cover;
 }
