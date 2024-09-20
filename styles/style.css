@@ -1,8 +1,15 @@
+:root { 
+    --primary-color: white;
+    --primary-font: "Pokemon1", "Sans-Serif";
+    --maxwidth: 32rem;
+}
+
 body { 
     background-color: #0f224a;
     color: white;
     margin:0;
     padding:0;
+    grid-template-columns: minmax(auto, var(--maxWidth));
 }
 
 @font-face {
@@ -17,20 +24,13 @@ body {
     font-weight: bold;
 }
 
-:root { 
-    --primary-color: white;
-    --primary-font: "Pokemon1", "Sans-Serif";
-}
-
 h1 { 
-    text-transform: uppercase;
     font-family: var(--primary-font);
-    font-size: 2.5em;
+    font-size: 1.7em;
     color: var(--primary-color);
 }
 
 h2 {
-    text-transform: uppercase;
     font-family: var(--primary-font);
 }
 
@@ -58,6 +58,13 @@ iframe {
     border-width: 10px;
     border-style: solid;
     margin: 20px;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    padding: 10px 16px;
+    background-color: #0f224a;
 }
 
 main section:nth-of-type(1) {
@@ -97,18 +104,22 @@ main section:nth-of-type(2) {
     flex-direction: column;
     align-items: center; 
     text-align: center;
-    width: 100%
+    width: 100%;
 }
 
-main section:nth-of-type(2) img {
+main section:nth-of-type(2) p {
+    margin-top: -1.5em;
+} 
+
+main section:nth-of-type(2) img:nth-of-type(1) {
     width: 45%;
     padding: 1em;
 }
 
-section:nth-last-of-type(3) {
+/* section:nth-last-of-type(3) {
     display: grid;
     grid-column-start: 3;
-}
+} */
 
 nav img {
     width: auto;
@@ -118,6 +129,26 @@ nav img {
 img {
     display: block;
     height: auto;
-    max-width: 100%;
+    max-width: 100vw;
     object-fit: cover;
+}
+
+main section:nth-of-type(3) ul {
+    display: flex;
+    flex-direction: row;
+    overflow: scroll;
+    list-style-type: none;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    scroll-snap-type: inline mandatory;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    overscroll-behavior: contain auto;
+}
+
+main section:nth-of-type(3) ul li {
+    width: 600px;
+    border-radius: 50%;
 }
