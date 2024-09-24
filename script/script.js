@@ -1,0 +1,1 @@
+openbutton.onclick = openMenu;
