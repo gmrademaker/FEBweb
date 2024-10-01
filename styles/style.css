@@ -58,6 +58,10 @@ p {
     position: centre;
 }
 
+header {
+    z-index: 1000000;
+}
+
 article {
     border-width: 2px;
     border-style: solid;
@@ -415,7 +419,6 @@ main section:nth-of-type(7) img {
 
 /* pokemon go logo */
 main section:nth-of-type(7) img:first-of-type {
-    width: 60%;
     max-width: 300px;
     margin-bottom: 20px;
 }
@@ -500,12 +503,13 @@ footer section:nth-of-type(5) {
 .citysafari h3 {
     font-size: 24px;
     text-align: center;
+    line-height: normal;
+    margin-left: 0;
 }
 
 .citysafari p {
     text-align: center;
     margin: 20px 30px 20px 30px;
-    font-size: 16px;
 }
 
 .citysafari img:nth-of-type(2) {
@@ -539,6 +543,11 @@ footer section:nth-of-type(5) {
 }
 
 .citysafari section:nth-of-type(2) h3 {
+    font-family: var(--primary-font);
+    font-size: 14px;
+}
+
+.citysafari section:nth-of-type(2) h4 {
     font-family: var(--primary-font);
     font-size: 14px;
 }
@@ -588,7 +597,6 @@ footer section:nth-of-type(5) {
 .citysafari section:nth-of-type(2) div * {
     margin: 5px;
     padding: 0;
-    
 }
 
 .citysafari section:nth-of-type(3) {
@@ -606,4 +614,362 @@ footer section:nth-of-type(5) {
 
 .citysafari section:nth-of-type(3) p {
     font-size: 13px;
+}
+
+.citysafari section:nth-of-type(4) {
+    background: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.citysafari section:nth-of-type(4) p {
+    font-size: 12px;
+    padding: 0;
+    margin: 0;
+    margin-left: 110px;
+    margin-right: 110px;
+    font-weight: bold;
+}
+
+.citysafari section:nth-of-type(4) p:nth-of-type(1) {
+    font-size: 16px;
+    margin: 20px;
+}
+
+.citysafari section:nth-of-type(4) img {
+    width: 40px;
+    padding: 0;
+    margin: 0;
+    padding-top: 40px;
+    padding-bottom: 10px;
+}
+
+/* block 1 styling */
+.citysafari section:nth-of-type(5) {
+    background-image: none;
+    background-color: white;
+    width: 100%;
+    color:#18242e;
+    border-radius: 20px;
+    margin: 20px auto;
+    max-width: calc(100% - 60px);
+    padding-bottom: 40px;
+    justify-content: center;
+    align-items: center;
+}
+
+.citysafari section:nth-of-type(5) img {
+    padding-top: 20px;
+    width: 120px;
+    margin-left: 118px;
+    align-items: center;
+}
+
+.citysafari section:nth-of-type(5) h2 {
+    color: black;
+    font-size: 64px;
+    padding: 0;
+    margin: 10;
+    width: 84%;
+    margin-left: 30px;
+    margin-top: 15px;
+}
+
+.citysafari section:nth-of-type(5) h3 {
+    font-size: 32px;
+    margin-bottom: 0;
+}
+
+.citysafari section:nth-of-type(5) p {
+    font-size: 16px;
+    width: 90%;
+    margin-top: 0;
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.citysafari section:nth-of-type(5) a { 
+    background-color: #fac665;
+    border-radius: 50px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    font-family: var(--primary-font);
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.citysafari section:nth-of-type(5) div {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    gap: 0;
+    margin-bottom: 20px;
+    margin-left: -100px;
+}
+
+.citysafari section:nth-of-type(5) div img {
+    width: 30px;
+    margin-top: 0;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+/* block 2 styling */
+.citysafari section:nth-of-type(6) {
+    background-image: none;
+    background-color: white;
+    width: 100%;
+    color:#18242e;
+    border-radius: 20px;
+    margin: 20px auto;
+    max-width: calc(100% - 60px);
+    padding-bottom: 40px;
+    justify-content: center;
+    align-items: center;
+}
+
+.citysafari section:nth-of-type(6) img {
+    padding-top: 20px;
+    width: 120px;
+    margin-left: 118px;
+    align-items: center;
+}
+
+.citysafari section:nth-of-type(6) h2 {
+    color: black;
+    font-size: 64px;
+    padding: 0;
+    margin: 10;
+    width: 84%;
+    margin-left: 30px;
+    margin-top: 15px;
+}
+
+.citysafari section:nth-of-type(6) h3 {
+    font-size: 32px;
+    margin-bottom: 0;
+}
+
+.citysafari section:nth-of-type(6) p {
+    font-size: 16px;
+    width: 90%;
+    margin-top: 0;
+    text-align: left;
+    padding-bottom: 0;
+}
+
+.citysafari section:nth-of-type(6) a { 
+    background-color: #fac665;
+    border-radius: 50px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    font-family: var(--primary-font);
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-left: 110px;
+}
+
+.citysafari section:nth-of-type(6) div {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    gap: 0;
+    margin-bottom: 20px;
+    margin-left: -100px;
+    width: auto;
+    position: static;
+}
+
+.citysafari section:nth-of-type(6) div img {
+    width: 30px;
+    margin-top: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 3px;
+}
+
+/* block 3 styling */
+.citysafari section:nth-of-type(7) {
+    background-image: none;
+    background-color: white;
+    width: 100%;
+    color:#18242e;
+    border-radius: 20px;
+    margin: 20px auto;
+    max-width: calc(100% - 60px);
+    padding-bottom: 40px;
+    justify-content: center;
+    align-items: center;
+}
+
+.citysafari section:nth-of-type(7) img {
+    padding-top: 20px;
+    width: 120px;
+    margin-left: 118px;
+    align-items: center;
+}
+
+.walking {
+    padding-top: 20px;
+    margin-right: 118px;
+    align-items: center;
+}
+
+.citysafari section:nth-of-type(7) h2 {
+    color: black;
+    font-size: 64px;
+    padding: 0;
+    margin: 10;
+    width: 84%;
+    margin-top: 15px;
+}
+
+.citysafari section:nth-of-type(7) h3 {
+    font-size: 32px;
+    margin-bottom: 0;
+}
+
+.citysafari section:nth-of-type(7) p {
+    font-size: 16px;
+    width: 90%;
+    margin-top: 0;
+    text-align: left;
+    margin-bottom: 30px;
+    padding-right: 20px;
+}
+
+.citysafari section:nth-of-type(7) p:last-child {
+    color: gray;
+}
+
+.citysafari section:nth-of-type(7) a { 
+    background-color: #fac665;
+    border-radius: 50px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    font-family: var(--primary-font);
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.citysafari section:nth-of-type(7) div {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    gap: 0;
+    margin-bottom: 20px;
+    margin-left: -100px;
+}
+
+.citysafari section:nth-of-type(7) div img {
+    width: 30px;
+    margin-top: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 3px;
+}
+
+/* block 4 styling */
+.citysafari section:nth-of-type(8) {
+    background-image: none;
+    background-color: white;
+    width: 100%;
+    color:#18242e;
+    border-radius: 20px;
+    margin: 20px auto;
+    max-width: calc(100% - 60px);
+    padding-bottom: 40px;
+    justify-content: center;
+    align-items: center;
+}
+
+.citysafari section:nth-of-type(8) h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+
+.citysafari section:nth-of-type(8) ul {
+    list-style-type: decimal;
+    padding-bottom: 50px;
+    padding-left: 60px;
+}
+
+.citysafari section:nth-of-type(8) ul li {
+    font-family: var(--primary-font);
+    line-height: 25px;
+    padding-right: 30px;
+}
+
+.citysafari section:nth-of-type(8) a { 
+    background-color: #fac665;
+    border-radius: 50px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    font-family: var(--primary-font);
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-left: 110px;
+}
+
+/* block 5 styling */
+.citysafari section:nth-of-type(9) {
+    background-image: none;
+    background-color: white;
+    width: 100%;
+    color:#18242e;
+    border-radius: 20px;
+    margin: 20px auto;
+    margin-bottom: 100px;
+    max-width: calc(100% - 60px);
+    padding-bottom: 40px;
+    justify-content: center;
+    align-items: center;
+}
+
+.citysafari section:nth-of-type(9) h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+
+.citysafari section:nth-of-type(9) p {
+    text-align: left;
+    line-height: 1.5;
+}
+
+.citysafari section:nth-of-type(9) p:last-of-type {
+    padding-bottom: 30px;
+}
+
+.citysafari section:nth-of-type(9) ul li {
+    font-family: var(--primary-font);
+    line-height: 25px;
+    padding-right: 30px;
+    margin-left: 20px;
+}
+
+.citysafari section:nth-of-type(9) a { 
+    background-color: #fac665;
+    border-radius: 50px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    font-family: var(--primary-font);
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-left: 110px;
+}
+
+.space {
+    margin: 90px 3px 10px 5px;
+}
+
+.smalltext {
+    font-size: 12px;
 }
