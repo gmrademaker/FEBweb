@@ -41,11 +41,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   #### Screenshot(s) van de eerste pagina (small screen): 
   Home 
 <<<<<<< HEAD
-  <img src="readme-images/planktonchronicleshome.png" width="375px" alt="omschrijving van de pagina">
+  <img src="../readme-images/pokemongohome.png" width="375px" alt="Pokémon GO home">
 
   #### Screenshot(s) van de tweede pagina (small screen):
   The book
-  <img src="readme-images/planktonchroniclesbook.png" width="375px" alt="omschrijving van de pagina">
+  <img src="../readme-images/pokemoncitysafari.png" width="375px" alt="Pokémon GO City Safari">
 
  
 </details>
@@ -60,8 +60,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen:
    -menu veranderd naar hamburgermenu wanneer het een mobiele site is
-   -titel op de mobiele pagina is niet goed uitgelijnd
-   -is redelijk goed te gebruiken met een screenreader, leest alleen wel elke keer de hele navigatie voor (incl. visited/unvisited link)
+   -er is geen H1 op de home pagina
+   -is redelijk goed te gebruiken met een screenreader, noemt de navigatie een 'summary group'
 
 </details>
 
@@ -73,13 +73,13 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na afloop 3<sup>e</sup> werkgroep</summary>
 
   ### de hele pagina: 
-  <img src="readme-images/breakdownschets.png" width="375px" alt="breakdown van de hele pagina">
+  <img src="../readme-images/breakdownschets.png" width="375px" alt="breakdown van de hele pagina">
 
   ### dynamisch deel (bijv menu): 
-  <img src="readme-images/nav.png" width="375px" alt="breakdown van een dynamisch deel">
+  <img src="../readme-images/menu.png" width="375px" alt="breakdown van een dynamisch deel">
 
   ### wellicht nog een dynamisch deel (bijv filter): 
-  <img src="readme-images/flex.png" width="375px" alt="breakdown van nog een dynamisch deel">
+  <img src="../readme-images/carousel.png" width="375px" alt="breakdown van nog een dynamisch deel">
 
 </details>
 
@@ -93,7 +93,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 1<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  mijn website planktonchronicles.org is offline. ik ben samen met thomas gaan zitten om te kijken of we dit op konden lossen. de website was echt offline, dus hebben we er voor gekozen om een andere website te pakken. ik ga nu de pokemon go website namaken.
 
 
   ### Agenda voor meeting
@@ -109,9 +109,9 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
+  - mijn website palnktonchronicles.org is offline
+  - ik ga nu de pokemon go website maken
+  - ...
   - ...
 
 </details>
@@ -126,7 +126,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 2<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  het eeste deel van het coderen gaat goed. ik heb nog een vraag over hoe ik er voor kan zorgen dat mijn mobiele pagina geen afloop heeft aan de rechter kant. ook wil ik een vraag stellen over hoe ik het beste een carousel kan maken.
 
 
   ### Agenda voor meeting
@@ -142,7 +142,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
+  - het maken van een carousel kan ik doen met behulp van de opdracht
   - punt 2
   - nog een punt
 - ...
@@ -160,6 +160,10 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
+- mijn hamburger menu word benoemd als een hamburger menu, niet als een summary group
+- alle knoppen zijn bruikbaar
+- gebruikt de invisible H1
+- ziet de carousel als een list met items
 
 </details>
 
@@ -173,7 +177,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 3<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  het gaat tot nu toe wel goed. het enige wat ik nog moet doen is de styling van mijn tweede pagina afmaken en het hamburger menu werkend krijgen.
 
 
   ### Agenda voor meeting
@@ -189,9 +193,9 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
+  - kim heeft mij geholpen met mijn hamburger menu
+  - ik heb zelf verder gewerkt aan mijn pagina
+  - ik voel me goed over hoe het er tot nu toe uit ziet
   - ...
 
 </details>
