@@ -1,5 +1,9 @@
 :root { 
-    --primary-color: white;
+    --text-color: white;
+    --text-color-dark: #18242e;
+    --background-color: #0f224a;
+    --background-color-light: white;
+    --background-color-light-blue: #E2F7F7;
     --primary-font: "Pokemon1", "Sans-Serif";
     --bold-font: "Pokemon2", "Sans-Serif";
     --maxwidth: 32rem;
@@ -19,9 +23,40 @@
     width: 1px;
 }
 
+@media (prefers-color-scheme:light) {
+    :root {
+        --background-color: #a7d2f5;
+        --text-color: black;
+    }
+
+    .citysafari section:nth-of-type(4) {
+        color: black;
+    }
+
+    .citysafari section:nth-of-type(4) img {
+        filter: invert(100%);
+    }
+}
+
+@media (prefers-color-scheme:dark) {
+    footer {
+        --background-color-light: black;
+        --background-color-light-blue: #0f224a;
+        --text-color-dark: white;
+    }
+
+    footer section:nth-of-type(2) {
+        background-color: black;
+    }
+
+    footer img {
+        filter: invert(100%);
+    }
+}
+
 body { 
-    background-color: #0f224a;
-    color: white;
+    background-color: var(--background-color);
+    color: var(--text-color);
     margin:0;
     padding:0;
     grid-template-columns: minmax(auto, var(--maxWidth));
@@ -165,6 +200,7 @@ main section:nth-of-type(1) img {
 
 main section:nth-of-type(1) p, main section:nth-of-type(2) p {
     padding:1em;
+    color: white;
 }
 
 main section:nth-of-type(1) a, main section:nth-of-type(2) a {
@@ -186,6 +222,7 @@ main section:nth-of-type(2) {
     flex-direction: column;
     align-items: center; 
     text-align: center;
+    color: white;
     width: 100%;
 }
 
@@ -259,6 +296,7 @@ main section:nth-of-type(4) {
     background-image: url("../images/bluebg.webp");
     background-size: cover;
     padding: 20px 0px 0px 0px;
+    color: white;
 }
 
 main section:nth-of-type(4) h2, h3 {
@@ -282,6 +320,19 @@ main section:nth-of-type(4) p {
     position: absolute;
     padding-left: 20px;
     padding-top: 30px;
+    z-index: 10;
+}
+
+.poke2 {
+    position: absolute;
+    width: 85px;
+    padding-left: 30px;
+    padding-top: 40px;
+    z-index: 5;
+}
+
+.poke:hover + .poke2{
+    z-index: 20;
 }
 
 main section:nth-of-type(5) {
@@ -311,6 +362,7 @@ main section:nth-of-type(5) h2 {
 
 main section:nth-of-type(6) {
     background-image: url("../images/pokemoncitybg.jpg");
+    color: white;
 }
 
 main section:nth-of-type(6) h2 {
@@ -424,12 +476,12 @@ main section:nth-of-type(7) img:first-of-type {
 }
 
 footer section:nth-of-type(1) {
-    background-color: white;
+    background-color: var(--background-color-light);
     padding-top: 20px;
 }
 
 footer section:nth-of-type(2) {
-    background-color: white;
+    background-color: var(--background-color-light);
     font-size: 12px;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -439,14 +491,14 @@ footer section:nth-of-type(2) {
 }
 
 footer section:nth-of-type(2) a {
-    color: #18242e;
+    color: var(--text-color-dark);
     text-decoration: none;
     font-family: var(--primary-font);
 }
 
 footer section:nth-of-type(3) {
-    background-color: white;
-    color: #18242e;
+    background-color: var(--background-color-light);
+    color: var(--text-color-dark);
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -470,12 +522,12 @@ footer section:nth-of-type(4) {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #e2f7f7;
+    background-color: var(--background-color-light-blue);
     padding: 20px 20px 20px 20px;
 }
 
 footer section:nth-of-type(4) a {
-    color: #18242e;
+    color: var(--text-color-dark);
     text-decoration: none;
     font-family: var(--primary-font);
     line-height: 2.4;
@@ -485,13 +537,16 @@ footer section:nth-of-type(5) {
     font-size: 12px;
     line-height: 1.4;
     padding: 20px 20px 20px 20px;
-    background-color: white;
-    color: #18242e;
+    background-color: var(--background-color-light);
+    color: var(--text-color-dark);
     text-align: center;
 }
 
+/* Hier begint de tweede pagina */
+
 .citysafari {
-    background-color: #234375;
+    background-color: var(--background-color);
+    color: var(--text-color);
 }
 
 .citysafari h2 {
@@ -510,6 +565,10 @@ footer section:nth-of-type(5) {
 .citysafari p {
     text-align: center;
     margin: 20px 30px 20px 30px;
+}
+
+.citysafari section:nth-of-type(1) {
+    color: white;
 }
 
 .citysafari img:nth-of-type(2) {
@@ -556,6 +615,7 @@ footer section:nth-of-type(5) {
     font-size: 14px;
     width: 90%;
     margin-top: 0;
+    color: black;
 }
 
 .citysafari section:nth-of-type(2) div p:first-of-type{
@@ -701,6 +761,10 @@ footer section:nth-of-type(5) {
     text-transform: uppercase;
 }
 
+.citysafari section:nth-of-type(5) a:hover {
+    box-shadow: 5px 5px 20px 0px black;
+}
+
 .citysafari section:nth-of-type(5) div {
     display: grid;
     grid-template-columns: 1fr 4fr;
@@ -771,6 +835,10 @@ footer section:nth-of-type(5) {
     font-weight: bold;
     text-transform: uppercase;
     margin-left: 110px;
+}
+
+.citysafari section:nth-of-type(6) a:hover {
+    box-shadow: 5px 5px 20px 0px black;
 }
 
 .citysafari section:nth-of-type(6) div {
@@ -857,6 +925,10 @@ footer section:nth-of-type(5) {
     text-transform: uppercase;
 }
 
+.citysafari section:nth-of-type(7) a:hover {
+    box-shadow: 5px 5px 20px 0px black;
+}
+
 .citysafari section:nth-of-type(7) div {
     display: grid;
     grid-template-columns: 1fr 4fr;
@@ -917,6 +989,10 @@ footer section:nth-of-type(5) {
     margin-left: 110px;
 }
 
+.citysafari section:nth-of-type(8) a:hover {
+    box-shadow: 5px 5px 20px 0px black;
+}
+
 /* block 5 styling */
 .citysafari section:nth-of-type(9) {
     background-image: none;
@@ -964,6 +1040,10 @@ footer section:nth-of-type(5) {
     font-weight: bold;
     text-transform: uppercase;
     margin-left: 110px;
+}
+
+.citysafari section:nth-of-type(9) a:hover {
+    box-shadow: 5px 5px 20px 0px black;
 }
 
 .space {

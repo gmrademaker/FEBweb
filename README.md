@@ -238,8 +238,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Nb. ChatGpT en andere AI horen er ook bij.
   Nb. Vermeld de bronnen ook in je code.
 
-  1. bron 1
-  2. bron 2
-  3. ...
+  1. Bron voor carousel https://codepen.io/ivoonline/pen/OJeYJaZ?editors=1100 
+  2. Bron voor CSS grid layouts https://css-tricks.com/snippets/css/complete-guide-grid/
+  3. ChatGPT voor inspiratie/typfouten vinden
 
 </details>
